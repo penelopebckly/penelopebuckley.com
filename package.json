@@ -6,5 +6,9 @@
   "repository": "git@bitbucket.org:47ng/penelopebuckley.com.git",
   "author": "Francois Best <francoisbest@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "surge": "^0.19.0"
+  }
 }
