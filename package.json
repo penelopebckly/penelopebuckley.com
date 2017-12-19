@@ -1,0 +1,10 @@
+{
+  "name": "penelopebuckley.com",
+  "version": "0.0.0",
+  "description": "Static website for https://penelopebuckley.com",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:47ng/penelopebuckley.com.git",
+  "author": "Francois Best <francoisbest@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
