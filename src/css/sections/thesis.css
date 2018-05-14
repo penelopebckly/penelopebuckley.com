@@ -1,0 +1,14 @@
+.thesis-title .text {
+  font-style: italic;
+  margin: 0 0 1rem;
+  font-size: 140%;
+}
+.thesis-title {
+  padding-bottom: 2.5rem;
+}
+
+.thesis-title sub {
+  display: block;
+  margin-top: 1.25rem;
+  opacity: 0.75;
+}

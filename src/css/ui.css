@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  padding: 0.75rem 2rem;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: solid 1px black;
+}
+
+hr.short {
+  border-style: solid;
+  border-radius: 1px;
+  width: 4rem;
+}
+
+.disabled {
+  opacity: 0.5;
+}

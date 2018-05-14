@@ -1,0 +1,63 @@
+section.education .timeline {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+section.education .timeline li {
+  position: relative;
+  padding: 2rem 0;
+}
+
+section.education .timeline li.year span {
+  font-weight: 300;
+}
+
+section.education .timeline li.item {
+  padding: 3rem 0;
+  display: flex;
+}
+
+section.education .timeline li.item img {
+  width: 80px;
+  max-height: 80px;
+  margin: 0 1rem;
+  opacity: 0.5;
+}
+
+section.education .timeline li.item .what {
+  text-align: left;
+  flex: 1;
+}
+section.education .timeline li.item .what p {
+  font-style: italic;
+}
+
+section.education .timeline li:before,
+section.education .timeline li:after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 0.2rem;
+  height: 2rem;
+  background-color: var(--color-text-25);
+  left: 50%;
+}
+
+section.education .timeline li:before {
+  border-radius: 0 0 0.1rem 0.1rem;
+}
+section.education .timeline li:after {
+  border-radius: 0.1rem 0.1rem 0 0;
+}
+
+section.education .timeline li:first-child:before,
+section.education .timeline li:last-child:after {
+  border-radius: 0.1rem;
+}
+
+section.education .timeline li:before {
+  top: 0;
+}
+section.education .timeline li:after {
+  bottom: 0;
+}

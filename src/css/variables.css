@@ -1,0 +1,21 @@
+:root {
+  --color-main-back: #3f51b5;
+  --color-main-text: white;
+  --color-main-back-lite: #4a5cc4;
+  --color-main-back-dark: #3949ab;
+
+  --color-light-back: white;
+  --color-light-text: #545872;
+
+  --color-medium-back: #2e357a;
+  --color-medium-text: white;
+
+  --color-dark-back: #1e213a;
+  --color-dark-text: white;
+
+  /* Shades of text color */
+  --color-text-100: #545872;
+  --color-text-75: #7f8295;
+  --color-text-50: #a9abb8;
+  --color-text-25: #d4d5dc;
+}

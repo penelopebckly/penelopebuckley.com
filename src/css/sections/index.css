@@ -1,0 +1,58 @@
+/* Sections */
+
+@import './hero.css';
+@import './about.css';
+@import './thesis.css';
+@import './interests.css';
+@import './education.css';
+@import './footer.css';
+
+section .title {
+  padding: 3rem 0;
+  font-family: Alegreya;
+  font-weight: 500;
+  position: relative;
+}
+
+section a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+section a:hover {
+  text-decoration: underline;
+}
+
+a.anchor {
+  color: inherit;
+  text-decoration: none;
+}
+a.anchor:hover {
+  text-decoration: underline;
+}
+
+section .container {
+  padding: 1rem 2rem 4rem;
+}
+
+main header {
+  background: var(--color-main-back);
+  background: linear-gradient(
+    to bottom,
+    var(--color-main-back) 0%,
+    var(--color-main-back-dark) 100%
+  );
+  color: var(--color-main-text);
+}
+
+main footer {
+  background-color: var(--color-dark-back);
+  color: var(--color-dark-text);
+}
+
+section {
+  background-color: var(--color-light-back);
+  color: var(--color-text-100);
+}
+section:not(:last-child) {
+  border-bottom: dotted 1px var(--color-text-25);
+}

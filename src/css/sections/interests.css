@@ -1,0 +1,18 @@
+section.interests img {
+  width: 10rem;
+  height: 10rem;
+}
+
+section.interests ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+section.interests ul li {
+  min-width: 20rem;
+}
+
+section.interests ul li:not(:last-child) {
+  margin-bottom: 3rem;
+}

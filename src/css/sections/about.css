@@ -1,0 +1,16 @@
+.about .cv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about .cv .icon {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+}
+
+.about hr {
+  border-color: var(--color-text-25);
+  margin: 3rem auto;
+}
