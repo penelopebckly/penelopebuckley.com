@@ -17,15 +17,19 @@
   <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="./icons/favicon.ico">
   <title>Penelope Buckley</title>
-  <link rel="stylesheet" defer href="https://fonts.googleapis.com/css?family=Alegreya:400,500|Source+Sans+Pro:300,400,400i">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400|Source+Sans+Pro:300,400,400i">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 
 <body>
+  <script>
+    document.body.classList.add('js-loading')
+  </script>
   <main>
     <header class="hero">
       <div class="container">
-        <img src="./images/photo.jpg" alt="Penelope Buckley" class="profile-picture">
+        <img src='./images/photo.jpg' alt="Penelope Buckley" class="profile-picture">
         <div class="text-content">
           <h1 class="name">Penelope Buckley</h1>
           <h3 class="title">PhD Researcher</h3>
@@ -232,6 +236,12 @@
       </p>
     </div>
   </footer>
+  <script>
+    var img = document.querySelector('.hero .profile-picture')
+    img.addEventListener('load', function () {
+      document.body.classList.remove('js-loading')
+    })
+  </script>
 </body>
 
 </html>

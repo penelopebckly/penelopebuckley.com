@@ -18,3 +18,9 @@ hr.short {
 .disabled {
   opacity: 0.5;
 }
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
