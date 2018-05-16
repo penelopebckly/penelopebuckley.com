@@ -24,6 +24,7 @@
 
 <body>
   <script>
+    // Done in a script to allow for ZeroJS environments.
     document.body.classList.add('js-loading')
   </script>
   <main>
@@ -60,7 +61,7 @@
             </a>
           </li>
           <li class="disabled">
-            <!-- <a href="#" target=":blank"> -->
+            <!-- <a href="#"> -->
             <img src="./images/cv-en.svg" alt="CV in English" class="icon"> CV in English
             <!-- </a> -->
           </li>
@@ -247,9 +248,16 @@
   </footer>
   <script>
     var img = document.querySelector('.hero .profile-picture')
-    img.addEventListener('load', function () {
+    if (img.complete) {
+      // Handle back button navigation animations
       document.body.classList.remove('js-loading')
-    })
+    }
+    else {
+      img.addEventListener('load', function () {
+        console.log('image loaded')
+        document.body.classList.remove('js-loading')
+      })
+    }
   </script>
 </body>
 
