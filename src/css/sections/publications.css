@@ -1,0 +1,29 @@
+.publications li {
+  text-align: left;
+}
+
+.publications li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.publications .authors {
+  display: inline;
+  font-style: italic;
+}
+
+.publications li .title {
+  display: inline;
+}
+
+.publications .details {
+  margin-top: 0.5rem;
+  color: var(--color-text-75);
+}
+
+.publications .badge {
+  float: right;
+  background-color: rgb(255, 237, 203);
+  color: rgb(94, 61, 0);
+  padding: 0 1rem;
+  border-radius: 0.3rem;
+}
