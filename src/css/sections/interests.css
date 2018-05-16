@@ -14,5 +14,5 @@ section.interests ul li {
 }
 
 section.interests ul li:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }

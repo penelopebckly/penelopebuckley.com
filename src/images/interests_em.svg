@@ -8,5 +8,5 @@
         <circle cx="145" cy="75" r="5"/>
         <circle cx="175" cy="65" r="5"/>
     </g>
-    <path d="M30 170V30m155 140H30m0-140L20 40m10-10l10 10m145 130l-10-10m10 10l-10 10" fill="none" stroke="#545872" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    <path d="M30 170V30m155 140H30m0-140L20 40m10-10l10 10m145 130l-10-10m10 10l-10 10" fill="none" stroke="#545872" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
 </svg>
