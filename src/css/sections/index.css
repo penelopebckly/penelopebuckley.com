@@ -30,7 +30,13 @@ a.anchor {
   text-decoration: none;
 }
 a.anchor:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+a.anchor:hover::before {
+  position: absolute;
+  content: '#';
+  transform: translateX(-125%);
+  opacity: 0.25;
 }
 
 section .container {
