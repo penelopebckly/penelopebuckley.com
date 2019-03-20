@@ -69,11 +69,9 @@
           <div class="text-content">
             <h1 class="name">Penelope Buckley</h1>
             <h3 class="title">PhD Candidate</h3>
-            <a
-              href="mailto:penelope.buckley@univ-grenoble-alpes.fr"
-              class="contact button"
-              >Contact</a
-            >
+            <a id="email-contact" href="#" class="contact button hidden">
+              Contact
+            </a>
           </div>
         </div>
       </header>
@@ -315,6 +313,21 @@
         img.addEventListener('load', function() {
           document.body.classList.remove('js-loading')
         })
+      }
+      window.onload = () => {
+        const contactEmail = document.getElementById('email-contact')
+        contactEmail.classList.remove('hidden')
+        const o =
+          'cmYvc2VwbGEtZWxib25lcmctdmludSR5ZWxrY3ViL2Vwb2xlbmVwOm90bGlhbQ=='
+        const data = contactEmail.setAttribute(
+          'href',
+          atob(o)
+            .split('')
+            .reverse()
+            .join('')
+            .replace(/\//g, '.')
+            .replace(/\$/g, '@')
+        )
       }
     </script>
     <!-- Matomo -->
