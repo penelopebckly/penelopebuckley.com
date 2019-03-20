@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "description": "Static website for https://penelopebuckley.com",
-  "repository": "git@bitbucket.org:47ng/penelopebuckley.com.git",
-  "author": "Francois Best <francoisbest@gmail.com>",
+  "repository": "https://github.com/franky47/penelopebuckley.com",
+  "author": "Francois Best <contact@francoisbest.com>",
   "license": "MIT",
   "scripts": {
     "start": "parcel ./src/index.html -d ./.dev",
@@ -18,9 +18,9 @@
     "reset.css": "^2.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^8.5.0",
+    "autoprefixer": "^9.5.0",
     "parcel-bundler": "^1.8.1",
-    "surge": "^0.19.0"
+    "surge": "^0.20.3"
   },
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR"
 }
