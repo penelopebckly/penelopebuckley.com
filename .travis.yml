@@ -11,14 +11,16 @@ before_install:
 
 script:
   - yarn build
-# before_deploy:
-#   - curl -sSL https://raw.githubusercontent.com/47ng/revelio/master/scripts/get.sh | bash
-#   - revelio generate -p ./build -u https://penelopebuckley.com
-#   - echo !.well-known > ./build/.surgeignore
-#   - cat ./build/.well-known/revelio.json
-# deploy:
-#   provider: surge
-#   project: ./build
-#   domain: https://penelopebuckley.com
-#   skip_cleanup: true
-#   on: master
+
+before_deploy:
+  - curl -sSL https://raw.githubusercontent.com/47ng/revelio/master/scripts/get.sh | bash
+  - revelio generate -p ./build -u https://penelopebuckley.com
+  - echo !.well-known > ./build/.surgeignore
+  - cat ./build/.well-known/revelio.json
+
+deploy:
+  provider: surge
+  project: ./build
+  domain: https://penelopebuckley.com
+  skip_cleanup: true
+  on: master
